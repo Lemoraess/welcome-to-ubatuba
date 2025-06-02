@@ -1,10 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #c2bdd9;
+  background-color: #272044;
 }
 
 section {
-  max-width: 1400px;
+  max-width: 1600px;
 }
 
 h2 {
@@ -19,6 +19,7 @@ h4 {
   color: #272044;
   letter-spacing: 5px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 p {
@@ -30,7 +31,7 @@ p {
 
 header {
   text-align: center;
-  padding: 282px 292px;
+  padding: 282px 150px;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/7pd-trilha1.jpeg);
@@ -43,7 +44,6 @@ header {
 header h4 {
   font-size: 24px;
   font-weight: 900;
-  margin-bottom: 0px;
   letter-spacing: 5px;
   color: white;
   line-height: 1.5;
@@ -79,6 +79,10 @@ header a {
   margin-top: 32px;
 }
 
+main {
+  background-color: white;
+}
+
 footer {
   text-align: left;
   padding: 60px 30px;
@@ -109,33 +113,30 @@ footer a {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
-.description-ubatuba {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 100px;
+.grid-ubatuba {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  padding: 100px;
 }
 
-.description-ubatuba img {
+.grid-ubatuba img {
   max-width: 100%;
-  margin: 10px;
+  aspect-ratio: 21/19;
 }
 
-.description-text {
-  margin: 10px;
-}
-
-.description-text h4 {
-  opacity: 0.3;
+.grid-ubatuba h4 {
+  opacity: 0.2;
 }
 
 .grid-footer {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  margin: 20px;
+  grid-gap: 20px;
 }
 
 .col-footer {
@@ -164,7 +165,21 @@ a:hover {
     font-size: 16px;
   }
 
+  .grid-ubatuba {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+
   .grid-footer {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid-ubatuba {
+    grid-template-columns: 1fr;
+    padding: 50px;
+    grid-gap: 30px;
   }
 }
