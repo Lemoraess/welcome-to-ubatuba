@@ -24,7 +24,7 @@ p {
 
 .hero {
   text-align: center;
-  padding: 100px 30px;
+  padding: 282px 292px;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/7pd-trilha1.jpeg);
@@ -37,7 +37,6 @@ p {
 .hero h4 {
   font-size: 24px;
   font-weight: 900;
-  margin-top: 200px;
   margin-bottom: 0px;
   letter-spacing: 5px;
   color: white;
@@ -63,7 +62,6 @@ p {
   font-weight: 700;
   letter-spacing: 3px;
   margin-top: 30px;
-  margin-bottom: 200px;
 }
 
 .description-ubatuba {
