@@ -74,6 +74,23 @@ header a {
   margin-top: 32px;
 }
 
+footer {
+  text-align: left;
+  padding: 60px 30px;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/7pd-trilha4.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   max-width: 1400px;
 }
@@ -92,6 +109,22 @@ header a {
 .description-text {
   margin: 10px;
 }
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  margin: 20px;
+}
+
+.col-footer {
+  margin: 20px;
+}
+
+a:hover {
+  color: #578ab1;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 60px;
@@ -107,5 +140,9 @@ header a {
 
   header h4 {
     font-size: 16px;
+  }
+
+  .grid-footer {
+    grid-template-columns: 1fr;
   }
 }
