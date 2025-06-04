@@ -172,10 +172,14 @@ footer a {
   opacity: 0.2;
 }
 
-.grid-card {
+.grid-3-col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
+}
+
+.cards-gallery {
+  margin: 70px 170px;
 }
 
 .card {
@@ -193,6 +197,10 @@ footer a {
 
 .card-body {
   padding: 30px;
+}
+
+.gallery {
+  margin: 100px 170px;
 }
 
 .grid-footer {
@@ -227,10 +235,15 @@ a:hover {
     font-size: 16px;
   }
 
+  h2 {
+    font-size: 30px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     padding: 20px;
     grid-gap: 10px;
+    margin: 0;
   }
 
   .card-header img {
@@ -238,17 +251,38 @@ a:hover {
   }
 
   .embed {
+    width: 100%;
     aspect-ratio: 21/19;
+  }
+
+  .cards-gallery {
+    grid-template-columns: 1fr;
+    margin: 0 !important;
+    grid-gap: 20px;
   }
 }
 
 @media (max-width: 1200px) {
   section {
     padding: 40px 30px;
+    margin: 0;
   }
+
   .grid-ubatuba {
     grid-template-columns: 1fr;
-    padding: 50px;
+    margin: 50px;
     grid-gap: 30px;
+  }
+
+  .cards-gallery {
+    grid-template-columns: 1fr;
+    margin: 50px;
+    grid-gap: 30px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    margin: 25px;
+    grid-gap: 20px;
   }
 }
