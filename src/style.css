@@ -5,11 +5,24 @@ body {
 
 section {
   max-width: 1600px;
+  padding: 100px 30px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 h2 {
   font-weight: 700;
   font-size: 40px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #272044;
   margin: 0;
 }
 
@@ -20,6 +33,13 @@ h4 {
   letter-spacing: 5px;
   margin: 0;
   text-transform: uppercase;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  color: #272044;
 }
 
 p {
@@ -34,7 +54,7 @@ header {
   padding: 282px 150px;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/7pd-trilha1.jpeg);
+    url(../images/background-header.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +83,7 @@ header h2 {
   line-height: 1.5;
 }
 
-header a {
+header a.button {
   padding: 16px 32px;
   background-color: white;
   color: #272044;
@@ -85,13 +105,12 @@ main {
 
 footer {
   text-align: left;
-  padding: 60px 30px;
   color: white;
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.7),
       rgba(39, 32, 68, 0.7)
     ),
-    url(../images/7pd-trilha4.jpeg);
+    url(../images/background-footer.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -112,6 +131,26 @@ footer a {
   color: white;
 }
 
+.button {
+  padding: 16px 32px;
+  background-color: #462cb2;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-decoration: none;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  margin: 30px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  aspect-ratio: 21/19;
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -124,23 +163,33 @@ footer a {
   padding: 100px;
 }
 
-.grid-ubatuba img {
-  max-width: 100%;
-  aspect-ratio: 21/19;
-}
-
 .grid-ubatuba h4 {
   opacity: 0.2;
+}
+
+.grid-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: white;
+  margin: 30px 0px;
+}
+
+.card-body {
+  padding: 30px;
 }
 
 .grid-footer {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 20px;
+  grid-gap: 100px;
 }
 
-.col-footer {
-  margin: 20px;
+.text-center {
+  text-align: center;
 }
 
 a:hover {
@@ -165,18 +214,17 @@ a:hover {
     font-size: 16px;
   }
 
-  .grid-ubatuba {
+  .grid {
     grid-template-columns: 1fr;
     padding: 20px;
     grid-gap: 10px;
   }
-
-  .grid-footer {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 1200px) {
+  section {
+    padding: 40px 30px;
+  }
   .grid-ubatuba {
     grid-template-columns: 1fr;
     padding: 50px;
